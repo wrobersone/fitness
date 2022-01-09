@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-color: #fce205;
+    ---black: #000;
+    --light-color: #a9a9a9;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    height: 200rem;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 3rem 9%;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0rem .1rem .5rem rgba(255, 255, 255, .1);
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(---black);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.header .logo span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header .navbar a {
+    color: var(---black);
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+.header .icons div {
+    font-size: 2.5rem;
+    color: #222;
+    padding: .5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.header .icons div:hover {
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+.header .icons a {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: white;
+    background: var(--main-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    border: none;
+}
+
+.header .icons a:hover {
+    background: white;
+    color: var(--main-color);
+}
