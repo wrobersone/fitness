@@ -119,7 +119,7 @@ section {
 
 .header .icons div {
     font-size: 2.5rem;
-    color: #222;
+    color: white;
     padding: .5rem;
     cursor: pointer;
     margin-left: 1rem;
@@ -280,8 +280,108 @@ section {
     border: .3rem solid white;
 }
 
+/* schedule section */
+.schedule {
+    background: white;
+}
 
+.schedule .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
 
+.schedule .box-container .box {
+    background: white;
+    overflow: hidden;
+}
+
+.schedule .box-container .box .content {
+    padding: 2rem;
+}
+
+.schedule .box-container .box .content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: .5rem;
+}
+
+.schedule .box-container .box .content p {
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.schedule .box-container .box .icons {
+    padding: 0 2rem;
+}
+
+.schedule .box-container .box .icons span {
+    display: block;
+    font-size: 1.3rem;
+    color: #333;
+    padding: .3rem 0;
+}
+
+.schedule .box-container .box .icons span i {
+    margin-right: .5rem;
+}
+
+.schedule .box-container .box .btn {
+    margin: 1.5rem 2rem;
+    background: var(--main-color);
+    color: white;
+}
+
+.schedule .box-container .box .btn:hover {
+    background: var(--main-color);
+}
+
+.schedule .box-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* trainer section */
+.trainers .trainer-slider {
+    padding-bottom: 4rem;
+}
+
+.trainers .trainer-slider .box {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.trainers .trainer-slider .box .image {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trainers .trainer-slider .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trainers .trainer-slider .box .name {
+    padding: 2rem 0;
+}
+
+.trainers .trainer-slider .box .name h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.trainers .trainer-slider .box .name p {
+    font-size: 2rem;
+    color: slategrey;
+}
 
 /* media queries */
 @media (max-width: 991px) {
@@ -323,6 +423,10 @@ section {
         display: block;
         margin: 2rem;
         font-size: 2rem;
+    }
+
+    .feature .feature-slider .box .content h3 {
+        padding: 1rem;
     }
 }
 
