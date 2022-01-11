@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="header">
@@ -26,5 +31,96 @@
             <div id="menu-btn" class="fas fa-bars"></div>
         </div>
     </header>
+
+    <section class="home">
+        <div class=" swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box" style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('img/home-1.jpg');">
+                    <div class="content">
+                        <h3>Join Fitlife Today</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque error numquam illum similique perspiciatis accusamus quae minus. Pariatur repellendus aspernatur, id soluta</p>
+                        <div class="button">
+                            <a href="#" class="btn btn-1">get started</a>
+                            <a href="#" class="btn">download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('img/home-2.jpeg');">
+                    <div class="content">
+                        <h3>Health is Wealth</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque error numquam illum similique perspiciatis accusamus quae minus.</p>
+                        <div class="button">
+                            <a href="#" class="btn btn-1">get started</a>
+                            <a href="#" class="btn">download</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- feature section -->
+    <section class="feature">
+        <h1 class="heading">featured <span>Classes</span></h1>
+        <div class="swiper feature-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/feature-classes-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Fitness Classes name here</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/feature-classes-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Fitness Classes name here</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/feature-classes-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Fitness Classes name here</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/feature-classes-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Fitness Classes name here</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/feature-classes-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="price">$39.99</div>
+                        <h3>Fitness Classes name here</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
