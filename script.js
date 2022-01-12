@@ -62,3 +62,27 @@ var swiper = new Swiper(".feature-slider", {
         },
     },
 });
+
+// for trainer section
+var swiper = new Swiper(".trainer-slider", {
+    spaceBetween: 20,
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+// feature classes in columns
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
